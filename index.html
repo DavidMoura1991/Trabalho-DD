@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa do Sabor</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet'>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-white shadow-sm px-3">
+    <a class="navbar-brand" href="#">
+        <img src="imagens/logo.png" class="logo" alt="Casa do Sabor">
+    </a>
+
+    <div class="ms-auto d-flex align-items-center">
+        <!-- Ícone do perfil -->
+        <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" class="profile-icon me-3">
+
+        <!-- Botão do menu -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideMenu">
+                    <i class="fa-solid fa-bars fa-2x" style="color:#6e4b42"></i>
+                </button>
+
+    </div>
+</nav>
+
+<!-- MENU LATERAL -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="sideMenu">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Menu</h5>
+        <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+
+    <div class="offcanvas-body">
+        <a href="#" class="d-block mb-3">Página Inicial</a>
+        <a href="#" class="d-block mb-3">Receitas</a>
+        <a href="#" class="d-block mb-3">Favoritos</a>
+        <a href="#" class="d-block mb-3">Criar receita</a>
+    </div>
+</div>
+
+<h3>Receitas em alta</h3>
+
+<div id="carrosselReceitas" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+        <div class="carousel-item active">
+            <div class="highlight-card">
+                <img src="imagens/pastel.jpg" alt="Pastel">
+                <p class="recipe-title">Pastel de queijo</p>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <div class="highlight-card">
+                <img src="imagens/bolo de cenoura.jpg" alt="Bolo">
+                <p class="recipe-title">Bolo de cenoura</p>
+            </div>
+        </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carrosselReceitas" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carrosselReceitas" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+<a href="receita.html" class="text-decoration-none">
+    <div class="small-card">
+        <img src="imagens/cuscuz.jpg">
+        <div class="conteudo-card">
+            <p class="small-card-title">Cuscuz recheado com carne seca</p>
+            <p>Tempo de preparo: 1h 30min</p>
+            <p>Ingredientes: </p>
+        </div>
+    </div>
+</a>
+
+
+<a href="receita.html" class="text-decoration-none">
+    <div class="small-card">
+        <img src="imagens/bolo de cenoura.jpg">
+        <div class="conteudo-card">
+            <p class="small-card-title">Bolo de cenoura</p>
+            <p>Tempo de preparo: 1h</p>
+            <p>Ingredientes: </p>
+        </div>
+    </div>
+</a>
+
+</body>
+</html>

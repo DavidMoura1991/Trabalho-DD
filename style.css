@@ -4,7 +4,7 @@ body {
 }
 
 .navbar {
-    background-color: #FAF4EA !important;
+    background-color: #F2E8D8 !important;
 }
 
 .logo {
@@ -30,7 +30,7 @@ h3 {
 
 .offcanvas {
     width: 45%;
-    background-color: #FAF4EA;
+    background-color: #F2E8D8;
     color: #6F3636;
 }
 
@@ -45,7 +45,7 @@ h3 {
 
 /* Carrossel */
 .highlight-card {
-    background: #FAF4EA;
+    background: #F2E8D8;
     padding: 10px;
     border-radius: 20px;
     width: 90%;
@@ -70,7 +70,7 @@ h3 {
 
 /* Cards pequenos */
 .small-card {
-    background: #FAF4EA;
+    background: #F2E8D8;
     border-radius: 20px;
     padding: 15px;
     display: flex;
@@ -117,4 +117,61 @@ p {
 .carousel-control-next-icon {
     margin-left: auto;
     margin-right: 1px;
+}
+
+/* pagina das receitas (cuscuz, bolo de cenoura) */
+
+.container-receitas {
+    width: 90%;
+    height: auto;
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-receitas img {
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: 2px 2px 6px rgba(108, 71, 71, 0.96);
+}
+
+.container-ingredientes {
+    background-color: #F2E8D8;
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+    padding: 12px;
+    margin-top: 20px;
+    box-shadow: 2px 2px 6px rgba(108, 71, 71, 0.96);
+}
+
+.titulo-receita {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    color: #6F3636;
+}
+
+.container-ingredientes h4 {
+    margin: 25px 0 22px 0;
+    text-align: center;
+    color: #6F3636;
+    font-weight: bold;
+}
+
+li {
+    font-size: 1.2rem;
+    color: #6F3636;
+}
+
+.modo-de-preparo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #6F3636;
+}
+
+.container-ingredientes p {
+    font-size: 1.2rem;
 }

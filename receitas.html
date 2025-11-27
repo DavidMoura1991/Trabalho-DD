@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+    <title>Receitas</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet'>
+    <style>
+        body {
+            max-width: 390px;
+            margin: 0 auto;
+            background: #f8f9fa;
+        }
+        .receita-card {
+            margin-bottom: 1.5rem;
+            border-radius: 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            background: #F2E8D8;
+            padding: 1.2rem;
+        }
+        .receita-card img {
+            width: 100%;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+        }
+        .receita-card h2 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+        .receita-card p {
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm px-3">
+        <a class="navbar-brand" href="#">
+            <img src="imagens/logo.png" class="logo" alt="Casa do Sabor">
+        </a>
+
+        <div class="ms-auto d-flex align-items-center">
+            <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" class="profile-icon me-3">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideMenu">
+                <i class="fa-solid fa-bars fa-2x" style="color:#6e4b42"></i>
+            </button>
+
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="sideMenu">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Menu</h5>
+            <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+
+        <div class="offcanvas-body">
+            <a href="index.html" class="d-block mb-3">Página Inicial</a>
+            <a href="receitas.html" class="d-block mb-3">Receitas</a>
+            <a href="#" class="d-block mb-3">Favoritos</a>
+            <a href="#" class="d-block mb-3">Criar receita</a>
+        </div>
+    </div>
+
+    <div class="text-center py-3">
+        <h1 class="m-0">Receitas</h1>
+    </div>
+    <main class="container py-3">
+        <div class="receita-card">
+            <img src="imagens/bolo de cenoura.jpg" alt="Bolo">
+            <h2>Bolo</h2>
+            <p>Confira como preparar um delicioso bolo caseiro. Ingredientes, modo de preparo e dicas especiais para um bolo fofinho e saboroso.</p>
+            <a href="bolo.html" class="btn btn-outline-brown btn-sm w-100">Ver receita</a>
+        </div>
+        <div class="receita-card">
+            <img src="imagens/cuscuz.jpg" alt="Cuscuz">
+            <h2>Cuscuz</h2>
+            <p>Aprenda a fazer um cuscuz tradicional, perfeito para o café da manhã ou lanche. Receita simples e rápida!</p>
+            <a href="cuscuz.html" class="btn btn-outline-brown btn-sm w-100">Ver receita</a>
+        </div>
+        <div class="receita-card">
+            <img src="imagens/pastel.jpg" alt="Pastel">
+            <h2>Pastel</h2>
+            <p>Descubra como preparar pastéis crocantes e recheados. Veja o passo a passo e dicas para fritar sem encharcar.</p>
+            <a href="pastel.html" class="btn btn-outline-brown btn-sm w-100">Ver receita</a>
+        </div>
+    </main>
+</body>
+</html>

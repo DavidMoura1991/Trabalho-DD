@@ -180,3 +180,16 @@ li {
 .container-ingredientes li {
     margin-top: 20px;
 }
+
+/* Botão marrom personalizado (outline) */
+.btn-outline-brown {
+    color: #6F3636; /* texto marrom */
+    border-color: #6F3636; /* borda marrom */
+}
+.btn-outline-brown:hover,
+.btn-outline-brown:focus,
+.btn-outline-brown:active {
+    color: #ffffff; /* texto branco no hover */
+    background-color: #6F3636; /* fundo marrom no hover */
+    border-color: #6F3636;
+}

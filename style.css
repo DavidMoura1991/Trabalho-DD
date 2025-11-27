@@ -5,6 +5,7 @@ body {
 
 .navbar {
     background-color: #F2E8D8 !important;
+    width: 100% !important;
 }
 
 .logo {
@@ -34,6 +35,11 @@ h3 {
     color: #6F3636;
 }
 
+.d-block:hover {
+    transform: scale(1.06);
+    transition: 0.5s;
+}
+
 .offcanvas-title {
     font-size: 1.5rem;
 }
@@ -42,6 +48,12 @@ h3 {
     font-size: 1.3rem;
     color: #6F3636;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 
 /* Carrossel */
 .highlight-card {
@@ -59,6 +71,11 @@ h3 {
     height: 170px;
     object-fit: cover;
 }
+
+.highlight-card a:hover {
+    opacity: 0.8; 
+}
+
 
 .recipe-title {
     font-size: 1.4rem;
@@ -134,6 +151,7 @@ p {
     width: 100%;
     border-radius: 25px;
     box-shadow: 2px 2px 6px rgba(108, 71, 71, 0.96);
+    margin-bottom: 3px;
 }
 
 .container-ingredientes {
@@ -142,7 +160,7 @@ p {
     height: auto;
     border-radius: 25px;
     padding: 12px;
-    margin-top: 20px;
+    margin-top: 4px;
     box-shadow: 2px 2px 6px rgba(108, 71, 71, 0.96);
 }
 
@@ -181,15 +199,123 @@ li {
     margin-top: 20px;
 }
 
+.heart {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5px;
+}
+
+.heart input {
+    display: none; /* esconde o checkbox */
+}
+
+.heart span {
+    font-size: 40px;
+    cursor: pointer;
+    color: red; 
+    transition: 0.3s;
+}
+
+.heart input:checked + span {
+    color: #b6b6b6;
+}
+
+
 /* Botão marrom personalizado (outline) */
 .btn-outline-brown {
-    color: #6F3636; /* texto marrom */
-    border-color: #6F3636; /* borda marrom */
+    color: #6e4b42; /* texto marrom */
+    border-color: #6e4b42; /* borda marrom */
 }
 .btn-outline-brown:hover,
 .btn-outline-brown:focus,
 .btn-outline-brown:active {
     color: #ffffff; /* texto branco no hover */
-    background-color: #6F3636; /* fundo marrom no hover */
-    border-color: #6F3636;
+    background-color: #6e4b42; /* fundo marrom no hover */
+    border-color: #6e4b42;
+}
+
+.receita-card {
+    margin-bottom: 1.5rem;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    background: #F2E8D8;
+    padding: 1.2rem;
+}
+.receita-card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+
+.m-0 {
+    color: #6F3636;
+}
+.receita-card h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #6F3636;
+}
+.receita-card p {
+    font-size: 1rem;
+}
+
+/* =========================================
+   ESTILOS NOVOS — CRIAR RECEITA
+========================================= */
+
+.container-criar {
+    padding: 20px;
+}
+
+.image-box {
+    background: #F2E8D8;
+    border-radius: 15px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #6e4b42;
+    margin-bottom: 15px;
+}
+
+.side-boxes {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.side-small {
+    background: #F2E8D8;
+    border-radius: 12px;
+    padding: 12px;
+    width: 150px;
+    text-align: center;
+    color: #6e4b42;
+}
+
+.card-form {
+    background: #F2E8D8;
+    padding: 15px;
+    border-radius: 15px;
+    color: #6e4b42;
+}
+
+.form-control {
+    border-radius: 10px;
+}
+
+.choose-photo-btn {
+    padding: 10px 18px;
+    background: #6e4b42;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.card-form .btn-outline-brown {
+    margin-top: 20px;
+    font-size: 1.2rem;
 }
